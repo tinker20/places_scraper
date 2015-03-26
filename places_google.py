@@ -6,8 +6,8 @@ google_places = GooglePlaces(YOUR_API_KEY)
 
 # You may prefer to use the text_search API, instead.
 query_result = google_places.text_search(
-        query='books College Street, Kolkata', 
-	types=[types.TYPE_BOOK_STORE])
+        query='shops in Mumbai', 
+	types=[types.TYPE_HARDWARE_STORE])
 
 for place in query_result.places:
     # Returned places from a query are place summaries.
